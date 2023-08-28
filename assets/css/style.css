@@ -1,87 +1,100 @@
+/* Sets universal margin */
 * {
     box-sizing: border-box;
-    padding: 0 ;
+    padding: 0;
     margin: 0;
+    border: 0;
 }
-
+/* Sets background color */
 body {
     background-color: darkkhaki;
+   
 }
-
+/* Sets header attributes */
 .header {
     background-color: darkslateblue;
     color: white;
     padding: 20px;
-    width: 100%;
+    width:100%;
+    font-size: 30px;
+    display: inline-block;
 }
 
 .header h1 {
-    display: inline;
+    display:inline;
 }
 
-.header nav {
+nav {
+    display: flex;
     float: right;
-    padding-top: 15px;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-.header nav ul  {
-    list-style-type: none;
+    padding-top: 20px;
 }
 
 .header nav ul li {
-    display: inline-block;
+    display: inline;
     margin-left: 25px;
+ 
 }
 
 a {
     color: white;
 }
 
+
+/* defines about me section and creates flexbox */
 .about-me {
-    width: 25%;
-    margin-left: 30px;
-    background-color: darkslateblue;
-    display: block;
-    margin-bottom: 100px;
-    border-right: 5px solid black;
+    width: 90%;
+    margin: 50px;
+    display:flex;
 }
 
-.work {
-    width: 25%;
-    margin-left: 30px;
+.about-me h2{
+    font-size: 50px;
     display: block;
-    background-color: darkslateblue;
-    height: 400px;
+}
+
+.about-me h2::after{
+    content:"";
     border-right: 5px solid black;
-    position: absolute;
-
-
+    margin-left: 60px;
+    
 }
 
 .about-me .paragraph {
-    width: 60%;
-    display: inline-flex;
-    position: absolute;
+    width: 40%;
+    display:inline-block;
     margin-left: 200px;
-    justify-content: center;
+    margin-right: 200px;
 }
 
 
-
-.about-me h2{
-    display: inline;
-    font-size: 50px;
-    padding: 20px;
-
-}
-
-.work h2{
+/* Defines margin for picture class */
+.picture{
     display: flex;
-    font-size: 50px;
-   
+    justify-content: center;
+    background-color: black;
 }
+
+/* Sets width and height for image */
+.picture img {
+ width: 50%;
+ height: 50%;
+}
+
+
+.work{
+display: flex;
+position: relative;
+
+
+}
+.work h2{
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+
 
 .card {
     width: 600px;
@@ -89,7 +102,9 @@ a {
     border: 5px solid black;
     margin-left: 500px ;
     position: absolute;
-    top: 0px;
+}
+
+.card img {
   
-    
+  
 }
