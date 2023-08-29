@@ -5,11 +5,8 @@
     margin: 0;
     border: 0;
 }
-/* Sets background color */
-body {
-    background-color: darkkhaki;
-   
-}
+
+
 /* Sets header attributes */
 .header {
     background-color: darkslateblue;
@@ -23,11 +20,9 @@ body {
 .header h1 {
     display:inline;
 }
-
-nav {
-    display: flex;
+.header nav {
     float: right;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .header nav ul li {
@@ -45,12 +40,12 @@ a {
 .about-me {
     width: 90%;
     margin: 50px;
-    display:flex;
+    display:inline-flex;
 }
 
 .about-me h2{
     font-size: 50px;
-    display: block;
+    display: inline-block;
 }
 
 .about-me h2::after{
@@ -60,11 +55,19 @@ a {
     
 }
 
+.work h2::after{
+    content: "";
+    border-right: 5px solid black;
+    margin-left: 150px;
+}
+
+
+
 .about-me .paragraph {
-    width: 40%;
+    width: 55%;
     display:inline-block;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -83,11 +86,18 @@ a {
 
 
 .work{
-display: flex;
-position: relative;
-
+display:flex;
 
 }
+
+.Contact-Me h2 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+
+
 .work h2{
     font-size: 50px;
     margin-top: 100px;
@@ -97,14 +107,51 @@ position: relative;
 
 
 .card {
-    width: 600px;
+    width: 60%;
     height: 200px;
-    border: 5px solid black;
-    margin-left: 500px ;
-    position: absolute;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    cursor: pointer;
+    position: static;
+    background-color: beige;
+    border: 3px solid black;
 }
 
-.card img {
+h3{
+    color: black;
+}
+
+
+.card:hover {
+ border: 4px solid darkslateblue;
+ background-color: antiquewhite;
+}  
   
-  
+.Contact-Me{
+    background-color: darkslateblue;
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px;
+    marg
+}
+
+.Contact-Me h2 {
+    display: inline;
+}
+
+.Contact-Me nav {
+    display: flex;
+    justify-content:center;
+}
+
+
+.Contact-Me nav ul li {
+    color: white;
+    display: inline;
+    margin-left: 40px;
+
 }
